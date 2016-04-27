@@ -1,0 +1,136 @@
+.vimeo {
+    display: block;
+    width: 1657px;
+    height: 1108px;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-left: -75px;
+}
+
+#cover {
+	width: auto;
+	height: 1108px;
+}
+
+.inner {
+	width: 1172px;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+
+#menu_bar {
+	width: 560px;
+	height: auto;
+	padding-top: 38px;
+	padding-bottom: 57px;
+	margin: auto;
+}
+
+.element {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-right: 1px solid #7e8997;
+	position: relative;
+	display: inline-block;
+}
+
+.disable {
+	color: #7e8997;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.enable {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #1d1f22;
+}
+
+a:link {
+	text-decoration: none;
+}
+#snap {
+	padding-right: 0px;
+	border-right: 0px;
+}
+
+#todos {
+	padding-left: 0px;
+}
+
+.content {
+	padding-bottom: 30px;
+}
+
+.title {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: #1d1f22;
+	font-size: 14px;
+	line-height: 20px;
+	padding-bottom: 6px;
+}
+
+.subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400 italic;
+	color: #7e8997;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.col {
+	padding-right: 30px;
+	display: inline-block;
+}
+
+#uno {
+	position: relative;
+	top: -158px;
+}
+
+#cuatro {
+	padding-right: 0px;
+	position: relative;
+	top: 0px;
+}
+
+#tres {
+	position: relative;
+	top: -55px;
+}
+
+#dos {
+	position: relative;
+	top: -26px;
+}
+
+.img {
+	padding-bottom: 16px;
+}
+
+#footer {
+	background-color: #0b151e;
+	height: 70px;
+	width: auto;
+	margin-top: 90px;
+}
+
+.social {
+	display: inline;
+	padding-right: 20px;
+	margin-top: auto;
+}
+
+#youtube {
+	padding-right: 0px;
+}
+
+#in_social {
+	width: 210px;
+	margin: auto;
+	padding-top: 20px;
+}
