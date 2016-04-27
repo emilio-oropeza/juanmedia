@@ -21,4 +21,11 @@ $(document).ready(function(){
     }
     return false;
     });
+    $('#uno').masonry({
+      columnWidth: 265,
+      itemSelector: '.content',
+      fitWidth: true
+    });
+    //revisa http://masonry.desandro.com/options.html
+    
 });
