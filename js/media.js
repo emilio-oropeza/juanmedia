@@ -3,8 +3,8 @@ $(document).ready(function(){
   $('#uno').masonry({
       itemSelector: '.content',
       originTop: true,
-      gutter: 0,
-      columnWidth: 20,
+      gutter: 20,
+      columnWidth: 160,
       fitWidth: true
     });
     $(".show").fancybox();
