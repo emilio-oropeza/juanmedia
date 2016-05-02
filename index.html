@@ -6,7 +6,15 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700,900' rel='stylesheet' type='text/css'>
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="js/jquery.waypoints.js"></script>
+		<!-- Add jQuery library -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<link  rel = "stylesheet"  href = "js/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type = "text/css"  media = "screen"  /> 
+		<script  type = "text/javascript"  src = "js/helpers/jquery.fancybox-thumbs.js?v=1.0.7" ></script>
 		<style>
 			html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 				background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -48,7 +56,401 @@
 	</head>
 	<body>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/media.css">
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/media.js"></script>
+		
+		<div id="pages">
+			<!--<div id="cover">
+				<div class="vimeoFrame">
+					<iframe class="vimeo" src="//player.vimeo.com/163463950?autoplay=1&loop=1&title=0&byline=0&portrait=0">
+					</iframe>
+				</div>
+			</div>-->
+			<div class="container">
+				<div class="inner">
+					<div id="menu_bar">
+						<div class="element" id="todo"><a href="#" class="enable filter" id="todos">TODOS</a></div>
+						<div class="element"><a href="#" class="disable filter" id="vid">VIDEO</a></div>
+						<div class="element"><a href="#" class="disable filter" id="book">FACEBOOK</a></div>
+						<div class="element"><a href="#" class="disable filter" id="insta">INSTAGRAM</a></div>
+						<div class="element" ><a href="#" class="disable filter" id="chat">SNAPCHAT</a></div>
+						<div class="element" id="snap"><a href="#" class="disable filter" id="landing">LANDING</a></div>
+					</div>
+					<div class="col" id="uno">
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/SjPXvQdg8qk?autoplay=1"><img src="images/Thumbs/netacronica_vid.jpg"></a>
+							</div>
+							<div class="title">NETA CRÓNICA</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/OXDShraYg7w?autoplay=1"><img src="images/Thumbs/juanreport_vid.jpg"></a>
+							</div>
+							<div class="title">JUAN REPORT</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/panini_fb.jpg"><img src="images/Thumbs/panini_fb.jpg"></a>
+							</div>
+							<div class="title">PANINI</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content snap snapchat">
+							<div class="img snap">
+								<a class="show show_snapchat" title="Snapchat" caption="asdfghjkl" rel="snap" href="images/Thumbs/jtf_sc.jpg"><img src="images/Thumbs/jtf_sc.jpg"></a>
+							</div>
+							<div class="title">JUAN THE FUCK</div>
+							<div class="subtitle">Snapchat - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/QY4iOx_Cfno?autoplay=1"><img src="images/Thumbs/juansapp_vid.jpg"></a>
+							</div>
+							<div class="title">JUANSAPP</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/80tPvg2l3VI?autoplay=1"><img src="images/Thumbs/juandirection_vid.jpg"></a>
+							</div>
+							<div class="title">JUANDIRECTION</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/puzzle_ig.jpg"><img src="images/Thumbs/puzzle_ig.jpg"></a>
+							</div>
+							<div class="title">PUZZLE</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/NozNnm8qQW8?autoplay=1"><img src="images/Thumbs/playbook_vid.jpg"></a>
+							</div>
+							<div class="title">PLAYBOOK</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/minutoaminuto_fb.jpg"><img src="images/Thumbs/minutoaminuto_fb.jpg"></a>
+							</div>
+							<div class="title">MINUTO A MINUTO</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/quote_fb.jpg"><img src="images/Thumbs/quote_fb.jpg"></a>
+							</div>
+							<div class="title">QUOTE</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/juanreport_ig.jpg"><img src="images/Thumbs/juanreport_ig.jpg"></a>
+							</div>
+							<div class="title">JUAN REPORT</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/n93HN96ejRwautoplay=1"><img src="images/Thumbs/reymon_vid.jpg"></a>
+							</div>
+							<div class="title">EL REYMON</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/jtf_ig.jpg"><img src="images/Thumbs/jtf_ig.jpg"></a>
+							</div>
+							<div class="title">JUAN THE FUCK</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content videos facebook">
+							<div class="img video">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/juantv_fb.jpg"><img src="images/Thumbs/juantv_fb.jpg"></a>
+							</div>
+							<div class="title">JUAN TV</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img_video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/MqkODphBOSY?autoplay=1"><img src="images/Thumbs/crudarealidad_vid.jpg"></a>
+							</div>
+							<div class="title">CRUDA REALIDAD</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/lalibreta_fb.jpg"><img src="images/Thumbs/lalibreta_fb.jpg"></a>
+							</div>
+							<div class="title">LA LIBRETA</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="images/Thumbs/fastfoot_vid.jpg"><img src="images/Thumbs/fastfoot_vid.jpg"></a>
+							</div>
+							<div class="title">FAST FOOD</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/juanreport_fb.jpg"><img src="images/Thumbs/juanreport_fb.jpg"></a>
+							</div>
+							<div class="title">JUAN REPORT</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/9dN9nvKojuI?autoplay=1"><img src="images/Thumbs/laetiqueta_vid.jpg"></a>
+							</div>
+							<div class="title">LA ETIQUETA</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/postal_fb.jpg"><img src="images/Thumbs/postal_fb.jpg"></a>
+							</div>
+							<div class="title">POSTAL</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/tAPZD1Ju7lo?autoplay=1"><img src="images/Thumbs/juanfutroll_vid.jpg"></a>
+							</div>
+							<div class="title">JUANFUTROLL</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/galeria_fb.jpg"><img src="images/Thumbs/galeria_fb.jpg"></a>
+							</div>
+							<div class="title">GALERÍA</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content app facebook">
+							<div class="img app">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/juansapp_gen.jpg"><img src="images/Thumbs/juansapp_gen.jpg"></a>
+							</div>
+							<div class="title">JUANSAPP</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="images/Thumbs/roastjuan_vid.jpg"><img src="images/Thumbs/roastjuan_vid.jpg"></a>
+							</div>
+							<div class="title">ROAST JUAN</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/nqMr5vAXB-U?autoplay=1"><img src="images/Thumbs/drawingjuan_vid.jpg" class="border"></a>
+							</div>
+							<div class="title">DRAWING JUAN</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/3SHdfW0vSYE?autoplay=1"><img src="images/Thumbs/manualvillamelon_vid.jpg"></a>
+							</div>
+							<div class="title">EL MANUAL DEL VILLAMELON</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/97BDGR5B6uM?autoplay=1"><img src="images/Thumbs/juanframe_vid.jpg"></a>
+							</div>
+							<div class="title">JUANFRAME</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/plumapixel_fb.jpg"><img src="images/Thumbs/plumapixel_fb.jpg"></a>
+							</div>
+							<div class="title">PLUMA PIXEL</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content indepth landing">
+							<div class="img indepth">
+								<a class="show show_landing" title="INDEPTH" caption="asdfghjkl" rel="landing" href="images/Thumbs/indepth_gen.jpg"><img src="images/Thumbs/indepth_gen.jpg"></a>
+							</div>
+							<div class="title">INDEPTH</div>
+							<div class="subtitle">(320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="images/Thumbs/var68_vid.jpg"><img src="images/Thumbs/var68_vid.jpg"></a>
+							</div>
+							<div class="title">VAR 68</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/V1RQCWOVx4o?autoplay=1"><img src="images/Thumbs/juantalk_vid.jpg"></a>
+							</div>
+							<div class="title">JUANTALK</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content list facebook">
+							<div class="img list">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/listicle_fb.jpg"><img src="images/Thumbs/listicle_fb.jpg"></a>
+							</div>
+							<div class="title">LISTICLE</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="images/Thumbs/juanremoto_vid.jpg"><img src="images/Thumbs/juanremoto_vid.jpg"></a>
+							</div>
+							<div class="title">JUAN REMOTO</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/versus_ig.jpg"><img src="images/Thumbs/versus_ig.jpg"></a>
+							</div>
+							<div class="title">VERSUS</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/vXGJybzEIt4?autoplay=1"><img src="images/Thumbs/defrente_vid.jpg"></a>
+							</div>
+							<div class="title">DE FRENTE</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/juanitoexplica_ig.jpg"><img src="images/Thumbs/juanitoexplica_ig.jpg"></a>
+							</div>
+							<div class="title">JUANITO LO EXPLICA TODO</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/5_eAYACr174?autoplay=1"><img src="images/Thumbs/juanminute_vid.jpg"></a>
+							</div>
+							<div class="title">JUAN MINUTE</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="images/Thumbs/fakinggraphics_vid.jpg"><img src="images/Thumbs/fakinggraphics_vid.jpg" class="border"></a>
+							</div>
+							<div class="title">FAKING GRAPHICS</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/juanreaction_fb.jpg"><img src="images/Thumbs/juanreaction_fb.jpg"></a>
+							</div>
+							<div class="title">JUAN REACTION</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content face facebook">
+							<div class="img face">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/juanfact_fb.jpg"><img src="images/Thumbs/juanfact_fb.jpg"></a>
+							</div>
+							<div class="title">JUAN FACT</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/dQtHeQb08fE?autoplay=1"><img src="images/Thumbs/atzel_vid.jpg"></a>
+							</div>
+							<div class="title">ATZEL</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/personajepp_ig.jpg"><img src="images/Thumbs/personajepp_ig.jpg"></a>
+							</div>
+							<div class="title"><p>PERSONAJE CON PRODUCT</p><p>PLACEMENT</p></div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/GqP-_vJ1l9s?autoplay=1"><img src="images/Thumbs/explicaloconfutbol_vid.jpg"></a>
+							</div>
+							<div class="title">EXPLÍCALO CON FUTBOL</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content info facebook">
+							<div class="img info">
+								<a class="show show_facebook" title="Infografía" caption="asdfghjkl" rel="facebook" href="images/Thumbs/infografia_gen.jpg"><img src="images/Thumbs/infografia_gen.jpg"></a>
+							</div>
+							<div class="title">INFOGRAFÍA</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content comic facebook">
+							<div class="img comic">
+								<a class="show show_facebook" title="Facebook" caption="asdfghjkl" rel="facebook" href="images/Thumbs/historieta_fb.jpg"><img src="images/Thumbs/historieta_fb.jpg"></a>
+							</div>
+							<div class="title">HISTORIETA</div>
+							<div class="subtitle">Facebook - (320 x 100)</div>
+						</div>
+						<div class="content face snapchat">
+							<div class="img face">
+								<a class="show show_snapchat" title="Snapchat" caption="asdfghjkl" rel="snap" href="images/Thumbs/juanreport_sc.jpg"><img src="images/Thumbs/juanreport_sc.jpg"></a>
+							</div>
+							<div class="title">JUAN REPORT</div>
+							<div class="subtitle">Snapchat - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="https://www.youtube.com/embed/B2wz2eiRbvk?autoplay=1"><img src="images/Thumbs/tomaydaca_vid.jpg"></a>
+							</div>
+							<div class="title">TOMA Y DACA</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/tablageneral_ig.jpg"><img src="images/Thumbs/tablageneral_ig.jpg"></a>
+							</div>
+							<div class="title">TABLA GENERAL</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+						<div class="content video videos">
+							<div class="img video">
+								<a class="show show_video" title="Video" caption="asdfghjkl" rel="video" data-fancybox-type="iframe" href="images/Thumbs/honesttrailer_vid.jpg"><img src="images/Thumbs/honesttrailer_vid.jpg"></a>
+							</div>
+							<div class="title">HONEST TRAILER</div>
+							<div class="subtitle">Video - (320 x 100)</div>
+						</div>
+						<div class="content face instagram">
+							<div class="img face">
+								<a class="show show_instagram" title="Instagram" caption="asdfghjkl" rel="instagram" href="images/Thumbs/cronicaemojis_ig.jpg"><img src="images/Thumbs/cronicaemojis_ig.jpg"></a>
+							</div>
+							<div class="title">CRÓNICA DE EMOJIS</div>
+							<div class="subtitle">Instagram - (320 x 100)</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<div class="inner">
+					<div id="in_social">
+						<div class="social">
+							<img src="images/Footer/juan.png">
+						</div>
+						<div class="social">
+							<img src="images/Footer/facebook.png">
+						</div>
+						<div class="social">
+							<img src="images/Footer/instagram.png">
+						</div>
+						<div class="social" id="youtube">
+							<img src="images/Footer/youtube.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
