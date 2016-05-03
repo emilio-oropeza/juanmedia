@@ -2,18 +2,9 @@
 	background-color: #f7f7f7;
 }
 
-.vimeo {
-    display: block;
-    width: 1657px;
-    height: 1108px;
-    margin: 0 auto;
-    margin-top: -50px;
-    margin-left: -75px;
-}
-
-#cover {
+#vimeo {
 	width: auto;
-	height: 1108px;
+	height: auto;
 }
 
 .inner {
@@ -132,4 +123,48 @@ p {
     top: 0px;
     width: 100%;
     margin: auto;
+}
+
+@media(max-width: 574px) {
+	.element {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+
+@media(max-width: 470px) {
+	#menu_bar {
+	    width: 300px;
+	}
+
+	#todo {
+    	padding-left: 16px;
+    	padding-right: 30px;
+	}
+
+	#element2 {
+		padding-left: 30px;
+    	padding-right: 30px;
+    	margin-bottom: 10px;
+	}
+
+	#element3 {
+		border-right: 0px;
+    	padding-right: 0px;
+    	padding-left: 10px;
+	}
+
+	#element4 {
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+
+	#element5 {
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+
+	#snap {
+		padding-left: 15px;
+	}
+
 }

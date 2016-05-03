@@ -1,14 +1,18 @@
 $(document).ready(function(){
-
-  $('#uno').masonry({
-      itemSelector: '.content',
-      originTop: true,
-      gutter: 20,
-      columnWidth: 160,
-      fitWidth: true
+    $('#uno').imagesLoaded(function(){
+      $('#uno').masonry({
+        itemSelector: '.content',
+        originTop: true,
+        gutter: 20,
+        columnWidth: 16,
+        fitWidth: true,
+        isAnimated: true
+      })
     });
+
     $(".show").fancybox();
     $(".show").attr('rel', 'video facebook snap instagram landing').fancybox({padding: 0});
+
     $('div.element a').click(function() {
     var textoFiltro = $(this).text().toLowerCase().replace(/\s/g,"-");
     if(textoFiltro == 'todos')
@@ -120,20 +124,8 @@ $(document).ready(function(){
     return false;
     });
 
-    //$("a[href$='.jpg']")
-    
-
-    /*$('#uno').masonry({
-      itemSelector: '.content',
-      columnWidth: 20,
-      
+    $('#vimeo').videoCover({
+        video : "https://vimeo.com/163463950",
+        loop : true
     });
-    $('#uno').masonry({
-      itemSelector: '.content',
-      columnWidth: 20,
-      
-    });*/
-    
-    
 });
-

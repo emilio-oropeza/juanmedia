@@ -62,7 +62,7 @@
 					var autoplay = (componentObj.autoplay)?"autoplay=1":"";
 					if(componentObj.videoType === "vimeo"){
 						var loop = (componentObj.loop)?"&loop=1":"";
-						frame = '<iframe class="vimeo" src="//player.vimeo.com/video/'+ componentObj.video_id
+						frame = '<iframe class="vimeo" src="https://player.vimeo.com/video/'+ componentObj.video_id
 						+'?'+autoplay+loop+'&title=0&byline=0&portrait=0" frameborder="0" '
 						+'webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 					}else if(componentObj.videoType === "youtube"){
