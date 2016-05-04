@@ -126,6 +126,7 @@ $(document).ready(function(){
 
     $('#vimeo').videoCover({
         video : "https://vimeo.com/163463950",
-        loop : true
+        loop : true,
+        scale: 2.35
     });
 });
