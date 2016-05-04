@@ -103,7 +103,8 @@
 						"max-width": "100%",
 						"height": "auto",
 						"vertical-align": "middle",
-						"border": "0"
+						"border": "0",
+						"margin": "auto"
 					});
 				},
 				resize: function(){
