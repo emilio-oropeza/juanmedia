@@ -55,6 +55,10 @@ a:visited {
 	color: #1d1f22;
 }
 
+a:focus, a:hover {
+	color: #1d1f22;
+}
+
 #snap {
 	padding-right: 0px;
 	border-right: 0px;
